@@ -30,11 +30,11 @@ while num_guesses < 10 && guessed_it == false
 
    # Compara a tentativa ao alvo
    # Imprime a mensagem apropriada
-   if guess > target
+   if guess < target
       puts "Oops, your guess was LOW"
-   elsif guess < target
+   elsif guess > target
       puts "Oops, your guess was HIGH"
-   elsif guesse == target
+   elsif guess == target
       puts "Good job, #{name}!"
       puts "You guessed my number in #{num_guesses} guesses!"
       guessed_it = true
